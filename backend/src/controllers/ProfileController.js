@@ -8,5 +8,26 @@ module.exports = {
 
         return response.json(casos);
 
+    },
+
+    async listDev(request, response) {
+        const dev_id = request.headers.authorization;
+
+        const dev = await connection('devs').where('id', dev_id).select('*').first();
+
+        return response.json(dev);
+    }, 
+    
+    async deleteDev(request, response) {
+        const dev_id = request.headers.authorization;
+
+        try{
+
+            await connection('devs').where('id', dev_id).delete();
+            return response.status(204).send();
+
+        }catch(err){
+            alert('Operation missing')
+        }
     }
 }

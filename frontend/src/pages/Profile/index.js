@@ -68,14 +68,15 @@ export default function Profile() {
                         </div>
                     </div>
                     <Link className='link-settings' to='/settings'>
-                        <FiSettings/>
+                        <FiSettings />
                     </Link>
                 </div>
-
-                <Link className='button' to='/casos/new'>Cadastar um novo caso</Link>
-                <button onClick={handleLogout} type='button'>
-                    <FiPower size={18} color='#e02041' />
-                </button>
+                <div>
+                    <Link className='button' to='/casos/new'>Cadastar um novo caso</Link>
+                    <button onClick={handleLogout} type='button'>
+                        <FiPower size={18} color='#e02041' />
+                    </button>
+                </div>
             </header>
 
             <h1>Casos cadastrados</h1>

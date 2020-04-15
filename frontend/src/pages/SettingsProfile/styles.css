@@ -1,49 +1,125 @@
-.novoCaso-container {
+.profile {
     width: 100%;
     max-width: 1120px;
     height: 100vh;
+    padding: 30px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.novoCaso-container .content {
+.profile .link-back {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    color: #41414d;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.link-back svg {
+    margin-right: 8px;
+}
+
+.link-back:hover {
+    opacity: 0.8;
+}
+
+.profile .container-content {
     width: 100%;
-    padding: 96px;
     background: #f0f0f5;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: top;
+    padding: 20px;
 }
 
-.novoCaso-container .content section{
-    width: 100%;
-    max-width: 380px;
+.profile .container-content .github-infos {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 0 1px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.profile .container-content .github-infos figure{
     text-align: center;
 }
-
-.novoCaso-container .content section h1{
-    margin: 44px 0 32px;
-    font-size: 32px;
-    text-align: center;   
+.profile .container-content .github-infos img {
+    width: 80%;
+    border-radius: 8px;
+    padding: 20px;
+    border-radius: 8%;
 }
 
-.novoCaso-container .content section p {
-   
-    text-align: start;
-    font-size: 18px;
+.github-infos .infos {
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.github-infos .infos strong, .personal-infos strong {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 6px;
+    color: black;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+.github-infos .infos p, .personal-infos p {
     color: #737380;
-    line-height: 32px;
-    
+    line-height: 21px;
+    font-size: 16px;
 }
 
-.novoCaso-container .content form{
-    width: 100%;
-    max-width: 450px;
+.github-infos .infos p+strong {
+    margin-top: 24px;
 }
 
+.profile .container-content .personal-infos {
+    width: 50%;
+    background: #f0f0f5;
+    padding: 2px;
+    border: 8px;
+    border-radius: 8px;
+}
 
+.personal-infos p+strong {
+    margin-top: 24px;
+}
+
+.bar {
+    padding: 7px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 32px auto;
+    background: #e02041;
+    transition: 0.6s;
+    opacity: 1;
+    position: relative;
+}
+
+.bar2 {
+    background: white;
+    padding: 1px;
+    transition: 0.6s;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.personal-infos .infos {
+    padding: 16px;
+}
+
+.container-content:hover .bar2 {
+    width: 80%;
+}
+
+button {
+    margin: 15px 0 30px;
+}

@@ -21,4 +21,7 @@ routes.delete('/casos/:id', CasoController.delete);
 
 routes.get('/profiles', ProfileController.list);
 
+routes.get('/settings', ProfileController.listDev);
+routes.delete('/settings/:id', ProfileController.deleteDev);
+
 module.exports = routes;
